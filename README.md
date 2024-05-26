@@ -2,6 +2,16 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+To run this application locally, follow these steps:
+
+Install Dependencies:
+
+```bash
+npm install
+#or
+yarn
+```
+
 First, run the development server:
 
 ```bash
