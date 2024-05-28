@@ -29,10 +29,11 @@ const Form = ({ endpoint, fields, title, redirectTo }) => {
       <form onSubmit={handleSubmit}>
         {fields.map((field) => (
           <div key={field.name} className="flex flex-col mt-5 ju">
-            <label>{field.label}:</label>
+            <label htmlFor={field.name}>{field.label}:</label>
             <input
               type={field.type || "text"}
               name={field.name}
+              id={field.name}
               required={field.required}
               onChange={handleChange}
               className="bg-[transparent] border-b-2 border-black rounded-md w-full px-3"
